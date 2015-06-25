@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en' type="text/plain">
+<head>
+<title>Elemental Reactor: Fire (Guessing Game)</title>
+<meta name="Elemental Reactor">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+	<header class="page-header">
+		<h1>Elemental Reactor: Fire</h1>
+	</header>
+	<div class="ui">
+		<div class="guess_box">
+			<div class="form-inline"> 
+				<input name="input_number" type="text" class="form-control" placeholder="Select Attunement Level (1-100)" id="try">
+				<input name="input_number" type="submit" value="Set" class="btn btn-danger" id="set">
+				<span id="helpBlock" class="help-block">Input a number from 1-100 that you think the attunement level has been set to (and cross your fingers!).</span>
+			</div>
+		</div>
+		<div class="buttons">
+			<input name="hint" type="submit" value="Get Hint" class="btn btn-warning" id="hint">
+			<input name="restart" type="submit" value="Shutdown (try again)" class="btn btn-danger" id="shutdown">
+		</div>
+		<div class="message_box">
+		<p>==Message Box==</p>
+		</div>
+		<div class="tracker">
+		<p>==Tracker==</p>
+		</div>
+	</div>
+	<div class="jumbotron">
+		<p>You are a renowned scientist in the field of elemental manipulation, researching a method that fuses the energy of all eight elements - earth, fire, wind, water, ice, electricity, light and dark matter - into a single entity to provide a source of renewable energy. In order to achieve this magnificent feat, you've built a new type of reactor, the likes of which the world has never seen.</p>
+		<p>But your reactor is quite dangerous. It must be carefully and painstakingly attuned to each element, lest it explode and destroy the entire city (and it's surrounding environs)! Each element is attuned via a different method. Your first goal is to attune the chaotic element of fire.</p>
+
+		<h2>Playing with Fire:</h2>
+		<ul>
+			<li>Fire may be stablized by determining a randomly generated attunement level from 1-100.</li>
+			<li>The reactor will hint to you whether you are close to the attunement level (red hot), far from it (ice cold), or somewhere in between.</li>
+			<li>You have up to 5 guesses before the reactor explodes!</li>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="guessing_game.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</hmtl>
